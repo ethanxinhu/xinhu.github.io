@@ -62,41 +62,55 @@
   <!-- Personal 页面 -->
   <section id="personal">
     <div class="container">
-      <h2>My Life</h2>
+      <h2>Hobbies and Life</h2>
       <p>Enjoy my life after work</p>
-	<p>Swim</p>
-      <div class="gallery">
-        <img src="images/swim.jpg" alt="Swim">
-        
-      </div>
-	<p>My basketball team</p>
-      <div class="gallery">
-        <img src="images/basketball1.jpg" alt="Swim">
-        <img src="images/basketball2.jpg" alt="Basketball">
-      </div>
-		
-	<div class="carousel">
+    
+
+	<div class="basketball">
   <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-  <div class="carousel-container">
+  <div class="basketball-slides">
     <img src="images/basketball1.jpg" class="slide active">
     <img src="images/basketball2.jpg" class="slide">
-    
+    <img src="images/basketball3.jpg" class="slide">
+    <img src="images/basketball4.jpg" class="slide">
+  <div class="photo-text">My basketball team</div>
   </div>
   <button class="next" onclick="moveSlide(1)">&#10095;</button>
 </div>
 
+<div class="image-box">
+    <p class="caption">Basketball game in Beijing, 2021-2024</p>
+</div>
+
 <style>
-.carousel {
+.image-box {
+   text-align: center; /* 图片和文字居中 */
+  margin-bottom: 20px;
+}
+.basketball img {
+  width: 80%;          /* 控制图片大小 */
+  border-radius: 10px; /* 圆角美观 */
+}
+.caption {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;     /* 图片与文字的间距 */
+}
+</style>
+
+<style>
+.basketball {
   position: relative;
+ text-align: center;
   max-width: 600px;
   margin: auto;
   overflow: hidden;
 }
-.carousel-container img {
+.basketball-slides img {
   width: 100%;
   display: none;
 }
-.carousel-container img.active {
+.basketball-slides img.active {
   display: block;
 }
 button.prev, button.next {
@@ -124,16 +138,18 @@ function moveSlide(step) {
 }
 </script>
 
+
     </div>
   </section>
 
   <!-- 页脚 -->
   <footer>
-    <p>© 2025 Ethan Xin Hu | Powered by HTML & CSS</p>
+    <p>© 2025 Ethan Xin Hu </p>
   </footer>
 
 </body>
 </html>
+
 
 
 
